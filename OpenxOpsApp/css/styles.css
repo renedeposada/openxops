@@ -224,6 +224,9 @@ p {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--color-text);
@@ -231,6 +234,25 @@ p {
 
 .brand span {
   color: var(--color-primary);
+}
+
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  background-color: var(--color-primary);
+  -webkit-mask-image: url("../assets/logos/logo.svg");
+  mask-image: url("../assets/logos/logo.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.site-footer .brand-icon {
+  background-color: var(--color-white);
 }
 
 .nav-toggle {
@@ -408,6 +430,38 @@ p {
 
 .mission-section {
   background-color: var(--color-white);
+}
+
+.featured-tool-single {
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Coming Soon Panel
+   ========================================================================== */
+
+.coming-soon-panel {
+  max-width: 560px;
+  margin-inline: auto;
+  text-align: center;
+  background-color: var(--color-white);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+}
+
+.coming-soon-panel .card-icon {
+  margin-inline: auto;
+}
+
+.coming-soon-panel h3 {
+  font-size: 1.25rem;
+}
+
+.coming-soon-panel p {
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
