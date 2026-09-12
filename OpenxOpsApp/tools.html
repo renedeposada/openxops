@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tools — Open xOps</title>
+  <meta
+    name="description"
+    content="Explore practical applications created by Open xOps to solve real-world challenges."
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="tools.html">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Open <span>xOps</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html" aria-current="page">Tools</a></li>
+          <li><a href="learning.html">Learning</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <a class="btn btn-primary" href="tools.html">Get Started</a>
+      </nav>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header container">
+      <h1>Tools</h1>
+      <p>
+        Explore practical applications created by Open xOps to solve
+        real-world challenges.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="filters" role="search" aria-label="Filter tools">
+          <div class="form-control">
+            <label for="tool-search">Search</label>
+            <input
+              type="search"
+              id="tool-search"
+              name="tool-search"
+              placeholder="Search tools..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-control">
+            <label for="tool-category">Category</label>
+            <select id="tool-category" name="tool-category">
+              <option value="all">All Categories</option>
+              <option value="personal-finance">Personal Finance</option>
+              <option value="productivity">Productivity</option>
+              <option value="career-development">Career Development</option>
+              <option value="technology">Technology</option>
+              <option value="analytics">Analytics</option>
+              <option value="utilities">Utilities</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="grid grid-3" id="tools-grid">
+          <article
+            class="card"
+            data-tool-card
+            data-name="WealthMap"
+            data-description="A retirement readiness platform that helps users understand where they are today and what actions they can take to improve their future financial outcomes."
+            data-category="personal-finance"
+          >
+            <div class="card-meta">
+              <span class="badge badge-category">Personal Finance</span>
+              <span class="badge badge-status-active">Active Development</span>
+            </div>
+            <h3>WealthMap</h3>
+            <p>
+              A retirement readiness platform that helps users understand
+              where they are today and what actions they can take to improve
+              their future financial outcomes.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="#">Launch Tool</a>
+              <a class="btn btn-secondary btn-sm" href="#">Learn More</a>
+            </div>
+          </article>
+
+          <article
+            class="card"
+            data-tool-card
+            data-name="FocusFlow"
+            data-description="A task and time-management companion for building better daily habits and staying focused on what matters most."
+            data-category="productivity"
+          >
+            <div class="card-meta">
+              <span class="badge badge-category">Productivity</span>
+              <span class="badge badge-status-planning">In Planning</span>
+            </div>
+            <h3>FocusFlow</h3>
+            <p>
+              A task and time-management companion for building better daily
+              habits and staying focused on what matters most.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="#">Launch Tool</a>
+              <a class="btn btn-secondary btn-sm" href="#">Learn More</a>
+            </div>
+          </article>
+
+          <article
+            class="card"
+            data-tool-card
+            data-name="SkillPath"
+            data-description="A career growth planner that maps skills, certifications, and learning paths to your professional goals."
+            data-category="career-development"
+          >
+            <div class="card-meta">
+              <span class="badge badge-category">Career Development</span>
+              <span class="badge badge-status-active">Active</span>
+            </div>
+            <h3>SkillPath</h3>
+            <p>
+              A career growth planner that maps skills, certifications, and
+              learning paths to your professional goals.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="#">Launch Tool</a>
+              <a class="btn btn-secondary btn-sm" href="#">Learn More</a>
+            </div>
+          </article>
+
+          <article
+            class="card"
+            data-tool-card
+            data-name="OpsMetrics"
+            data-description="An analytics dashboard for tracking operational KPIs and surfacing actionable insights."
+            data-category="analytics"
+          >
+            <div class="card-meta">
+              <span class="badge badge-category">Analytics</span>
+              <span class="badge badge-status-planning">In Planning</span>
+            </div>
+            <h3>OpsMetrics</h3>
+            <p>
+              An analytics dashboard for tracking operational KPIs and
+              surfacing actionable insights.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="#">Launch Tool</a>
+              <a class="btn btn-secondary btn-sm" href="#">Learn More</a>
+            </div>
+          </article>
+
+          <article
+            class="card"
+            data-tool-card
+            data-name="CloudLens"
+            data-description="A utility for visualizing and understanding cloud infrastructure costs and usage."
+            data-category="technology"
+          >
+            <div class="card-meta">
+              <span class="badge badge-category">Technology</span>
+              <span class="badge badge-status-planning">In Planning</span>
+            </div>
+            <h3>CloudLens</h3>
+            <p>
+              A utility for visualizing and understanding cloud infrastructure
+              costs and usage.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="#">Launch Tool</a>
+              <a class="btn btn-secondary btn-sm" href="#">Learn More</a>
+            </div>
+          </article>
+
+          <article
+            class="card"
+            data-tool-card
+            data-name="QuickCalc"
+            data-description="A collection of everyday calculators for quick, practical decision-making."
+            data-category="utilities"
+          >
+            <div class="card-meta">
+              <span class="badge badge-category">Utilities</span>
+              <span class="badge badge-status-planning">In Planning</span>
+            </div>
+            <h3>QuickCalc</h3>
+            <p>
+              A collection of everyday calculators for quick, practical
+              decision-making.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="#">Launch Tool</a>
+              <a class="btn btn-secondary btn-sm" href="#">Learn More</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" id="tools-empty-state">
+          No tools match your search. Try a different keyword or category.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Open xOps creates practical tools and educational resources to help
+        people solve real-world problems and continuously develop valuable
+        skills.
+      </p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:hello@openxops.com">Contact</a></li>
+      </ul>
+      <p class="footer-tagline">Built with openness and continuous learning in mind</p>
+      <p class="footer-tagline">&copy; 2026 Open xOps</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
