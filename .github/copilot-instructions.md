@@ -3,28 +3,28 @@
 This file consolidates the Product Requirements Document (PRD) and wireframe
 specifications for the Open xOps website. GitHub Copilot and other agents
 should reference this document as the source of truth when generating,
-modifying, or refactoring code in the `OpenxOpsApp/` folder.
+modifying, or refactoring code at the repository root.
 
-The implemented website lives in `OpenxOpsApp/` and follows the technology
-constraints, design system, and page specifications below exactly:
+The implemented website lives at the repository root (so GitHub Pages can
+serve it directly) and follows the technology constraints, design system, and
+page specifications below exactly:
 
 ```text
-OpenxOpsApp/
-├── index.html
-├── tools.html
-├── learning.html
-├── about.html
-│
-├── css/
-│   └── styles.css
-│
-├── js/
-│   └── main.js
-│
-└── assets/
-    ├── images/
-    ├── icons/
-    └── logos/
+index.html
+tools.html
+learning.html
+about.html
+
+css/
+  styles.css
+
+js/
+  main.js
+
+assets/
+  images/
+  icons/
+  logos/
 ```
 
 ---
