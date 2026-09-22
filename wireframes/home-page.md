@@ -8,7 +8,7 @@ This page acts as the primary landing page and marketing interface for Open xOps
 │ [Open xOps] Home Tools Learning About       [Get Started]         │
 ├────────────────────────────────────────────────────────────────────┤
 │                                                                    │
-│                    PRACTICAL TOOLS. CONTINUOUS LEARNING.         │
+│                         OPEN TOOLS & IDEAS                       │
 │ Open xOps creates tools and educational resources...             │
 │                                                                    │
 │        [Explore Tools]                  [Explore Learning]        │
@@ -17,8 +17,8 @@ This page acts as the primary landing page and marketing interface for Open xOps
 │                  OUR MISSION / WHAT WE DO                        │
 │                                                                    │
 │ ┌───────────────┐ ┌───────────────┐ ┌───────────────┐             │
-│ │ Solve Real    │ │ Learn         │ │ Share Open    │
-│ │ Problems      │ │ Continuously  │ │ Knowledge     │
+│ │ Solve Real    │ │ Explore Open  │ │ Share Open    │
+│ │ Problems      │ │ Ideas         │ │ Knowledge     │
 │ │               │ │               │ │               │
 │ │ practical     │ │ educational   │ │ accessible    │
 │ │ tools...      │ │ content...    │ │ knowledge...  │

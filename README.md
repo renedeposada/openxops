@@ -1,6 +1,6 @@
 # Open xOps
 
-Practical tools and educational resources to help people make better decisions, solve real-world problems, and build valuable skills.
+Practical tools and open ideas to help people make better decisions, solve real-world problems, and build valuable skills.
 
 The site is a static HTML/CSS/JS website (no build step, no frameworks) that lives at the root of this repository.
 

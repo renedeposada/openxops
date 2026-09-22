@@ -13,7 +13,7 @@ This layout applies to every page in the Open xOps site and defines the shared h
 ├────────────────────────────────────────────────────────────────────┤
 │ Mission statement / tagline                                       │
 │ Copyright © 2026 Open xOps   GitHub   LinkedIn   Contact          │
-│ Built with openness and continuous learning in mind              │
+│ Open Tools & Ideas for Real-World Impact                         │
 └────────────────────────────────────────────────────────────────────┘
 ```
 

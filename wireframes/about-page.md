@@ -22,7 +22,7 @@ This page communicates the Open xOps mission, principles, and long-term vision.
 │ └─────────────────────┘ └─────────────────────┘                  │
 │                                                                    │
 │ ┌─────────────────────┐ ┌─────────────────────┐                  │
-│ │ Continuous Improve. │ │ Community Driven    │                  │
+│ │ Keep Improving      │ │ Community Driven    │                  │
 │ │ Better tools...     │ │ Build with users... │                  │
 │ └─────────────────────┘ └─────────────────────┘                  │
 ├────────────────────────────────────────────────────────────────────┤
