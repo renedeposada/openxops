@@ -25,6 +25,6 @@ assets/
 
 - **Approach:** Site files were moved from `/OpenxOpsApp` to the repository root so GitHub Pages can serve `index.html` directly, without any build/copy step.
 - **Pages settings:** In the repo's **Settings → Pages**, set **Source** to "Deploy from a branch", **Branch** to `main`, and **Folder** to `/ (root)`.
-- **Public URL:** https://tserdp.github.io/openxops/
+- **Public URL:** https://renedeposada.github.io/openxops/
 
 All internal links and asset references (`css/`, `js/`, `assets/`) are relative, so no path changes were needed beyond the file move.
