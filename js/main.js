@@ -88,27 +88,6 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /* Learning page: accordion interactions                              */
-  /* ------------------------------------------------------------------ */
-  function initAccordions() {
-    const triggers = document.querySelectorAll(".accordion-trigger");
-
-    triggers.forEach((trigger) => {
-      trigger.addEventListener("click", () => {
-        const item = trigger.closest(".accordion-item");
-        const panel = document.getElementById(
-          trigger.getAttribute("aria-controls")
-        );
-        const isExpanded = trigger.getAttribute("aria-expanded") === "true";
-
-        trigger.setAttribute("aria-expanded", String(!isExpanded));
-        item?.classList.toggle("is-open", !isExpanded);
-        if (panel) panel.hidden = isExpanded;
-      });
-    });
-  }
-
-  /* ------------------------------------------------------------------ */
   /* Smooth scrolling for in-page anchor links                          */
   /* ------------------------------------------------------------------ */
   function initSmoothScroll() {
@@ -130,7 +109,6 @@
     initMobileNav();
     initActiveNavLink();
     initToolsFilter();
-    initAccordions();
     initSmoothScroll();
   });
 })();

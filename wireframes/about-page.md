@@ -10,8 +10,8 @@ This page communicates the Open xOps mission, principles, and long-term vision.
 │                                                                    │
 │                            ABOUT                                   │
 │                                                                    │
-│ Open xOps was founded to create practical tools and educational   │
-│ resources that help people make informed decisions...              │
+│ Open xOps started with a simple belief: useful tools can grow      │
+│ from open ideas and help people make informed decisions...         │
 │                                                                    │
 ├────────────────────────────────────────────────────────────────────┤
 │                     CORE PRINCIPLES                                │

@@ -1,7 +1,8 @@
 # Learning Page Wireframe
 
 ## Purpose
-This page presents educational content and supports accordion-based browsing by category and type.
+This page presents the learning focus of Open xOps and clearly communicates
+when resources are still in development.
 
 ```text
 ┌────────────────────────────────────────────────────────────────────┐
@@ -9,7 +10,7 @@ This page presents educational content and supports accordion-based browsing by 
 ├────────────────────────────────────────────────────────────────────┤
 │                                                                    │
 │                   LEARNING RESOURCES                               │
-│ Educational content designed to help individuals...               │
+│ Practical learning resources are on the way...                    │
 │                                                                    │
 │ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
 │ │ Personal     │ │ Technology   │ │ Leadership   │ │ Professional │ │
@@ -19,13 +20,9 @@ This page presents educational content and supports accordion-based browsing by 
 │ │ investing... │ │ automation...│ │ communication│ │ learning     │ │
 │ └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘ │
 │                                                                    │
-│ Accordion sections:                                               │
-│ + Courses                                                          │
-│   Summary | Skill level | View resource                            │
-│ + Workshops                                                        │
-│ + Guides                                                           │
-│ + Articles                                                         │
-│ + Learning Paths                                                   │
+│                                                                    │
+│                         COMING SOON                                │
+│ Guides, courses, workshops, and learning paths are in development.  │
 │                                                                    │
 └────────────────────────────────────────────────────────────────────┘
 ```
@@ -33,8 +30,7 @@ This page presents educational content and supports accordion-based browsing by 
 ## Page elements
 - Intro header and description
 - Learning category cards
-- Accordion sections for multiple types of content
-- Resource summary and skill level detail
+- Coming-soon state for future learning resources
 
 ## Interactions
 - Expand/collapse accordion sections

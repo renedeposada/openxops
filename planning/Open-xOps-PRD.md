@@ -8,7 +8,7 @@ Open xOps Website
 
 ### Vision
 
-Open xOps creates practical tools and open ideas that help individuals and professionals solve real-world problems, make better decisions, and build valuable skills.
+Open xOps turns open ideas into practical tools that help people make better decisions and tackle everyday challenges.
 
 The platform serves as a central hub for discovering tools, learning resources, courses, guides, and future community offerings.
 
@@ -70,7 +70,7 @@ Practical tools and learning resources designed to create real-world impact.
 
 ### Mission
 
-Help people solve meaningful problems through accessible tools, actionable knowledge, and open ideas.
+Turn open ideas into useful tools and clear, practical knowledge people can use.
 
 ### Key Themes
 
@@ -146,7 +146,7 @@ Open Tools & Ideas
 ##### Subtitle
 
 ```text
-Open xOps creates tools and educational resources that help people make better decisions, solve real-world problems, and build valuable skills.
+We turn open ideas into practical tools that help people make better decisions and tackle everyday challenges.
 ```
 
 ##### Call-to-Action Buttons
@@ -235,7 +235,7 @@ Each item should include:
 Text:
 
 ```text
-Explore tools and learning resources designed to help you grow.
+Find tools and ideas that help with what you're working on.
 ```
 
 Button:
@@ -334,7 +334,7 @@ Learning Resources
 ##### Description
 
 ```text
-Educational content designed to help individuals and professionals build valuable skills and stay current in a rapidly changing world.
+Practical learning resources are on the way, built to help people learn by doing.
 ```
 
 ---
@@ -361,23 +361,11 @@ Certifications, learning paths, and lifelong learning.
 
 ---
 
-#### Interactive Content Section
+#### Learning Content Section
 
-Implement accordion sections for:
-
-- Courses
-- Workshops
-- Guides
-- Articles
-- Learning Paths
-
-Each section expands to reveal:
-
-- Brief summary
-- Skill level
-- Link to resource
-
-The structure should support easy expansion over time.
+Show a clear coming-soon state until real courses, workshops, guides,
+articles, or learning paths are available. Do not display placeholder titles,
+dead links, or fictional resource metadata.
 
 ---
 
@@ -388,7 +376,7 @@ The structure should support easy expansion over time.
 Sample content:
 
 ```text
-Open xOps was founded to create practical tools and open ideas that help people make informed decisions and build valuable skills. Our focus is on delivering accessible, high-value solutions that create measurable impact.
+Open xOps started with a simple belief: useful tools can grow from open ideas. We make things that help people make informed decisions, learn by doing, and move forward with confidence.
 ```
 
 ---

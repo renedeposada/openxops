@@ -39,7 +39,7 @@ Open xOps Website
 
 ### Vision
 
-Open xOps creates practical tools and open ideas that help individuals and professionals solve real-world problems, make better decisions, and build valuable skills.
+Open xOps turns open ideas into practical tools that help people make better decisions and tackle everyday challenges.
 
 The platform serves as a central hub for discovering tools, learning resources, courses, guides, and future community offerings.
 
@@ -101,7 +101,7 @@ Practical tools and learning resources designed to create real-world impact.
 
 ### Mission
 
-Help people solve meaningful problems through accessible tools, actionable knowledge, and open ideas.
+Turn open ideas into useful tools and clear, practical knowledge people can use.
 
 ### Key Themes
 
@@ -177,7 +177,7 @@ Open Tools & Ideas
 ##### Subtitle
 
 ```text
-Open xOps creates tools and educational resources that help people make better decisions, solve real-world problems, and build valuable skills.
+We turn open ideas into practical tools that help people make better decisions and tackle everyday challenges.
 ```
 
 ##### Call-to-Action Buttons
@@ -266,7 +266,7 @@ Each item should include:
 Text:
 
 ```text
-Explore tools and learning resources designed to help you grow.
+Find tools and ideas that help with what you're working on.
 ```
 
 Button:
@@ -365,7 +365,7 @@ Learning Resources
 ##### Description
 
 ```text
-Educational content designed to help individuals and professionals build valuable skills and stay current in a rapidly changing world.
+Practical learning resources are on the way, built to help people learn by doing.
 ```
 
 ---
@@ -419,7 +419,7 @@ The structure should support easy expansion over time.
 Sample content:
 
 ```text
-Open xOps was founded to create practical tools and open ideas that help people make informed decisions and build valuable skills. Our focus is on delivering accessible, high-value solutions that create measurable impact.
+Open xOps started with a simple belief: useful tools can grow from open ideas. We make things that help people make informed decisions, learn by doing, and move forward with confidence.
 ```
 
 ---
@@ -953,7 +953,7 @@ This page acts as the primary landing page and marketing interface for Open xOps
 ├────────────────────────────────────────────────────────────────────┤
 │                                                                    │
 │                         OPEN TOOLS & IDEAS                       │
-│ Open xOps creates tools and educational resources...             │
+│ We turn open ideas into practical tools...                      │
 │                                                                    │
 │        [Explore Tools]                  [Explore Learning]        │
 │                                                                    │
@@ -970,22 +970,16 @@ This page acts as the primary landing page and marketing interface for Open xOps
 ├────────────────────────────────────────────────────────────────────┤
 │                   FEATURED TOOLS                                  │
 │                                                                    │
-│ ┌─────────────────────┐  ┌─────────────────────┐  ┌──────────────┐ │
-│ │ WealthMap           │  │ Tool Name 2         │  │ Tool Name 3   │ │
-│ │ Personal Finance    │  │ Category            │  │ Category      │ │
-│ │ Active Development  │  │                    │  │               │ │
-│ │ Desc...             │  │ Desc...             │  │ Desc...       │ │
-│ │ [Learn More]        │  │ [Learn More]        │  │ [Learn More] │ │
-│ └─────────────────────┘  └─────────────────────┘  └──────────────┘ │
+│ ┌───────────────────────────────────────────────────────────────┐ │
+│ │ WealthMap                                                     │ │
+│ │ Personal Finance | Active Development                         │ │
+│ │ Retirement readiness platform...                               │ │
+│ │ [Launch WealthMap]                                            │ │
+│ └───────────────────────────────────────────────────────────────┘ │
 ├────────────────────────────────────────────────────────────────────┤
 │                   FEATURED LEARNING                               │
 │                                                                    │
-│ ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐     │
-│ │ Guide Title     │  │ Article Title   │  │ Course Title    │     │
-│ │ Category        │  │ Category        │  │ Category        │     │
-│ │ Summary...      │  │ Summary...      │  │ Summary...      │     │
-│ │ [Read More]     │  │ [Read More]     │  │ [Read More]     │     │
-│ └─────────────────┘  └─────────────────┘  └─────────────────┘     │
+│ Open learning resources are currently in development.             │
 ├────────────────────────────────────────────────────────────────────┤
 │            EXPLORE TOOLS AND LEARNING RESOURCES...               │
 │                              [Get Started]                       │
@@ -1078,7 +1072,7 @@ This page presents educational content and supports accordion-based browsing by 
 ├────────────────────────────────────────────────────────────────────┤
 │                                                                    │
 │                   LEARNING RESOURCES                               │
-│ Educational content designed to help individuals...               │
+│ Practical learning resources are on the way...                    │
 │                                                                    │
 │ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
 │ │ Personal     │ │ Technology   │ │ Leadership   │ │ Professional │ │
@@ -1088,13 +1082,8 @@ This page presents educational content and supports accordion-based browsing by 
 │ │ investing... │ │ automation...│ │ communication│ │ learning     │ │
 │ └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘ │
 │                                                                    │
-│ Accordion sections:                                               │
-│ + Courses                                                          │
-│   Summary | Skill level | View resource                            │
-│ + Workshops                                                        │
-│ + Guides                                                           │
-│ + Articles                                                         │
-│ + Learning Paths                                                   │
+│                         COMING SOON                                │
+│ Guides, courses, workshops, and learning paths are in development. │
 │                                                                    │
 └────────────────────────────────────────────────────────────────────┘
 ```
@@ -1127,8 +1116,8 @@ This page communicates the Open xOps mission, principles, and long-term vision.
 │                                                                    │
 │                            ABOUT                                   │
 │                                                                    │
-│ Open xOps was founded to create practical tools and educational   │
-│ resources that help people make informed decisions...              │
+│ Open xOps started with a simple belief: useful tools can grow      │
+│ from open ideas and help people make informed decisions...         │
 │                                                                    │
 ├────────────────────────────────────────────────────────────────────┤
 │                     CORE PRINCIPLES                                │

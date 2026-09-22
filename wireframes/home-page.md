@@ -9,7 +9,7 @@ This page acts as the primary landing page and marketing interface for Open xOps
 ├────────────────────────────────────────────────────────────────────┤
 │                                                                    │
 │                         OPEN TOOLS & IDEAS                       │
-│ Open xOps creates tools and educational resources...             │
+│ We turn open ideas into practical tools...                      │
 │                                                                    │
 │        [Explore Tools]                  [Explore Learning]        │
 │                                                                    │
@@ -26,22 +26,16 @@ This page acts as the primary landing page and marketing interface for Open xOps
 ├────────────────────────────────────────────────────────────────────┤
 │                   FEATURED TOOLS                                  │
 │                                                                    │
-│ ┌─────────────────────┐  ┌─────────────────────┐  ┌──────────────┐ │
-│ │ WealthMap           │  │ Tool Name 2         │  │ Tool Name 3   │ │
-│ │ Personal Finance    │  │ Category            │  │ Category      │ │
-│ │ Active Development  │  │                    │  │               │ │
-│ │ Desc...             │  │ Desc...             │  │ Desc...       │ │
-│ │ [Learn More]        │  │ [Learn More]        │  │ [Learn More] │ │
-│ └─────────────────────┘  └─────────────────────┘  └──────────────┘ │
+│ ┌───────────────────────────────────────────────────────────────┐ │
+│ │ WealthMap                                                     │ │
+│ │ Personal Finance | Active Development                         │ │
+│ │ Retirement readiness platform...                               │ │
+│ │ [Launch WealthMap]                                            │ │
+│ └───────────────────────────────────────────────────────────────┘ │
 ├────────────────────────────────────────────────────────────────────┤
 │                   FEATURED LEARNING                               │
 │                                                                    │
-│ ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐     │
-│ │ Guide Title     │  │ Article Title   │  │ Course Title    │     │
-│ │ Category        │  │ Category        │  │ Category        │     │
-│ │ Summary...      │  │ Summary...      │  │ Summary...      │     │
-│ │ [Read More]     │  │ [Read More]     │  │ [Read More]     │     │
-│ └─────────────────┘  └─────────────────┘  └─────────────────┘     │
+│ Open learning resources are currently in development.             │
 ├────────────────────────────────────────────────────────────────────┤
 │            EXPLORE TOOLS AND LEARNING RESOURCES...               │
 │                              [Get Started]                       │
