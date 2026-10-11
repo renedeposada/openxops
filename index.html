@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open xOps — Open Tools &amp; Ideas</title>
+  <title>Open xOps</title>
   <meta
     name="description"
-    content="Open xOps turns open ideas into practical tools that help people make better decisions and tackle everyday challenges."
+    content="Open xOps turns open ideas into practical tools and learning resources that help people make better decisions and tackle everyday challenges."
   />
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -21,20 +21,20 @@
         Open <span>xOps</span>
       </a>
 
-      <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
         <ul class="nav-links">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="tools.html">Tools</a></li>
           <li><a href="learning.html">Learning</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="mailto:info@openxops.com">Contact</a></li>
         </ul>
-        <a class="btn btn-primary" href="tools.html">Get Started</a>
       </nav>
 
       <button
         class="nav-toggle"
         type="button"
-        aria-label="Toggle navigation menu"
+        aria-label="Open navigation menu"
         aria-expanded="false"
         aria-controls="main-nav"
       >
@@ -46,7 +46,6 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero -->
     <section class="hero container">
       <h1>Open Tools &amp; Ideas</h1>
       <p>
@@ -59,86 +58,94 @@
       </div>
     </section>
 
-    <!-- Mission -->
-    <section class="section mission-section" id="mission">
+    <section class="section mission-section">
       <div class="container">
         <div class="section-header">
-          <h2>Our Mission / What We Do</h2>
+          <h2>Our Mission</h2>
         </div>
         <div class="grid grid-3">
-          <div class="card">
-            <div class="card-icon" aria-hidden="true">🎯</div>
+          <article class="card mission-card">
             <h3>Solve Real Problems</h3>
             <p>Build practical tools that address everyday challenges.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon" aria-hidden="true">📚</div>
+          </article>
+          <article class="card mission-card">
             <h3>Explore Open Ideas</h3>
-            <p>
-              Start with a question, share what we learn, and make useful ideas
-              easier to put into practice.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-icon" aria-hidden="true">🌐</div>
+            <p>Provide educational content, guides, and courses designed for growth.</p>
+          </article>
+          <article class="card mission-card">
             <h3>Share Open Knowledge</h3>
             <p>Make expertise accessible, understandable, and actionable.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Featured Tools -->
-    <section class="section" id="featured-tools">
+    <section class="section tools-overview">
       <div class="container">
         <div class="section-header">
           <h2>Featured Tools</h2>
-          <p>Highlighted Open xOps applications.</p>
         </div>
-        <div class="featured-tool-single">
-          <article class="card">
+
+        <div class="tools-grid featured-tools-grid">
+          <article class="card tool-card" data-category="personal-finance" data-search="wealthmap retirement readiness planning personal finance">
             <div class="card-meta">
               <span class="badge badge-category">Personal Finance</span>
-              <span class="badge badge-status-active">Active Development</span>
+              <span class="badge badge-status-development">Active Development</span>
             </div>
             <h3>WealthMap</h3>
             <p>
-              A retirement readiness platform that helps users understand
-              where they are today and what actions they can take to improve
-              their future financial outcomes.
+              A retirement readiness platform that helps users understand where
+              they are today and what actions they can take to improve their
+              future financial outcomes.
             </p>
             <div class="card-actions">
-              <a class="btn btn-primary btn-sm" href="https://wealthmap.openxops.com/" target="_blank" rel="noopener noreferrer">Launch WealthMap</a>
+              <a class="btn btn-primary" href="https://wealthmap.openxops.com/" target="_blank" rel="noopener noreferrer">Launch WealthMap</a>
+              <a class="btn btn-secondary" href="tools.html#wealthmap">Learn More</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Featured Learning -->
-    <section class="section mission-section" id="featured-learning">
+    <section class="section learning-overview">
       <div class="container">
         <div class="section-header">
           <h2>Featured Learning</h2>
           <p>Open learning resources are currently in development.</p>
         </div>
-        <div class="coming-soon-panel">
-          <div class="card-icon" aria-hidden="true">📖</div>
-          <h3>Coming Soon</h3>
-          <p>
-            Practical learning resources, guides, and courses are currently
-            in development.
-          </p>
+
+        <div class="learning-grid">
+          <article class="card learning-card">
+            <span class="badge badge-category">Guides</span>
+            <h3>Decision-Making Guides</h3>
+            <p>Short, practical resources designed to help people take action with confidence.</p>
+            <a class="btn btn-secondary btn-sm" href="learning.html">Read More</a>
+          </article>
+          <article class="card learning-card">
+            <span class="badge badge-category">Articles</span>
+            <h3>Practical Insights</h3>
+            <p>Clear explanations of key ideas and strategies that help people learn by doing.</p>
+            <a class="btn btn-secondary btn-sm" href="learning.html">Read More</a>
+          </article>
+          <article class="card learning-card">
+            <span class="badge badge-category">Courses</span>
+            <h3>Applied Learning</h3>
+            <p>Hands-on courses built to make concepts practical and easy to use in real life.</p>
+            <a class="btn btn-secondary btn-sm" href="learning.html">Read More</a>
+          </article>
+          <article class="card learning-card">
+            <span class="badge badge-category">Learning Paths</span>
+            <h3>Growth Paths</h3>
+            <p>Curated learning steps that help people progress over time with clarity.</p>
+            <a class="btn btn-secondary btn-sm" href="learning.html">Read More</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CTA Banner -->
     <section class="cta-banner">
-      <div class="container">
-        <h2>
-          Find tools and ideas that help with what you're working on.
-        </h2>
+      <div class="container cta-banner-inner">
+        <h2>Find tools and ideas that help with what you're working on.</h2>
         <a class="btn btn-primary" href="tools.html">Get Started</a>
       </div>
     </section>
@@ -147,8 +154,8 @@
   <footer class="site-footer">
     <div class="container">
       <p>
-        We make practical tools from open ideas to help people solve everyday
-        problems and make confident decisions.
+        Open xOps turns open ideas into useful tools and clear, practical
+        knowledge people can use.
       </p>
       <ul class="footer-links">
         <li><a href="https://github.com/renedeposada" target="_blank" rel="noopener noreferrer" aria-label="Open xOps on GitHub (opens in a new tab)">GitHub</a></li>

@@ -1,106 +1,113 @@
-/**
- * Open xOps - main.js
- * Lightweight, framework-free interactivity shared across all pages.
- */
-
 (function () {
   "use strict";
 
-  /* ------------------------------------------------------------------ */
-  /* Mobile navigation drawer                                           */
-  /* ------------------------------------------------------------------ */
   function initMobileNav() {
     const toggle = document.querySelector(".nav-toggle");
     const nav = document.querySelector(".main-nav");
+    const mobileNav = window.matchMedia("(max-width: 767px)");
 
     if (!toggle || !nav) return;
 
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("is-open");
+    function setOpen(isOpen) {
+      nav.classList.toggle("is-open", isOpen);
+      nav.inert = mobileNav.matches && !isOpen;
       toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") !== "true";
+      setOpen(isOpen);
+      if (isOpen) {
+        nav.querySelector(".nav-links a")?.focus();
+      }
     });
 
-    // Close drawer when a nav link is clicked (mobile UX).
     nav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        nav.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
+        setOpen(false);
       });
     });
+
+    nav.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    mobileNav.addEventListener("change", () => setOpen(false));
+    setOpen(false);
   }
 
-  /* ------------------------------------------------------------------ */
-  /* Active navigation highlighting                                     */
-  /* ------------------------------------------------------------------ */
   function initActiveNavLink() {
-    const currentPage =
-      document.body.dataset.page ||
-      window.location.pathname.split("/").pop() ||
-      "index.html";
+    const currentPage = document.body.dataset.page || window.location.pathname.split("/").pop() || "index.html";
 
     document.querySelectorAll(".nav-links a").forEach((link) => {
-      const linkPage = link.getAttribute("href");
+      const linkPage = new URL(link.href, window.location.href).pathname.split("/").pop();
+      link.removeAttribute("aria-current");
+
       if (linkPage === currentPage) {
         link.setAttribute("aria-current", "page");
       }
     });
   }
 
-  /* ------------------------------------------------------------------ */
-  /* Tools page: search + category filtering                            */
-  /* ------------------------------------------------------------------ */
-  function initToolsFilter() {
-    const searchInput = document.querySelector("#tool-search");
-    const categorySelect = document.querySelector("#tool-category");
-    const cards = document.querySelectorAll("[data-tool-card]");
-    const emptyState = document.querySelector("#tools-empty-state");
+  function initToolFilters() {
+    const searchInput = document.querySelector("#tools-search");
+    const categorySelect = document.querySelector("#tools-category");
+    const toolCards = document.querySelectorAll(".tool-card");
 
-    if (!cards.length) return;
+    if (!searchInput || !categorySelect || !toolCards.length) return;
 
     function applyFilters() {
-      const query = (searchInput?.value || "").trim().toLowerCase();
-      const category = categorySelect?.value || "all";
-      let visibleCount = 0;
+      const query = searchInput.value.trim().toLowerCase();
+      const category = categorySelect.value;
 
-      cards.forEach((card) => {
-        const name = (card.dataset.name || "").toLowerCase();
-        const description = (card.dataset.description || "").toLowerCase();
-        const cardCategory = card.dataset.category || "all";
-
-        const matchesQuery =
-          !query || name.includes(query) || description.includes(query);
-        const matchesCategory = category === "all" || cardCategory === category;
-        const isVisible = matchesQuery && matchesCategory;
-
-        card.hidden = !isVisible;
-        if (isVisible) visibleCount += 1;
+      toolCards.forEach((card) => {
+        const cardText = (card.dataset.search || card.textContent || "").toLowerCase();
+        const matchesSearch = !query || cardText.includes(query);
+        const matchesCategory = category === "all" || card.dataset.category === category;
+        card.hidden = !(matchesSearch && matchesCategory);
       });
-
-      if (emptyState) {
-        emptyState.classList.toggle("is-visible", visibleCount === 0);
-      }
     }
 
-    searchInput?.addEventListener("input", applyFilters);
-    categorySelect?.addEventListener("change", applyFilters);
-
+    searchInput.addEventListener("input", applyFilters);
+    categorySelect.addEventListener("change", applyFilters);
     applyFilters();
   }
 
-  /* ------------------------------------------------------------------ */
-  /* Smooth scrolling for in-page anchor links                          */
-  /* ------------------------------------------------------------------ */
+  function initAccordions() {
+    document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
+      const item = trigger.closest(".accordion-item");
+      const panel = item?.querySelector(".accordion-panel");
+
+      if (!item || !panel) return;
+
+      trigger.addEventListener("click", () => {
+        const isExpanded = trigger.getAttribute("aria-expanded") === "true";
+        trigger.setAttribute("aria-expanded", String(!isExpanded));
+        item.classList.toggle("is-open", !isExpanded);
+        panel.hidden = isExpanded;
+      });
+    });
+  }
+
   function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      const targetId = link.getAttribute("href");
+      if (!targetId || targetId === "#") return;
+
+      const target = document.querySelector(targetId);
+      if (!target) return;
+
       link.addEventListener("click", (event) => {
-        const targetId = link.getAttribute("href");
-        if (!targetId || targetId === "#") return;
-
-        const target = document.querySelector(targetId);
-        if (!target) return;
-
         event.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+        target.scrollIntoView({ behavior, block: "start" });
       });
     });
   }
@@ -108,7 +115,8 @@
   document.addEventListener("DOMContentLoaded", () => {
     initMobileNav();
     initActiveNavLink();
-    initToolsFilter();
+    initToolFilters();
+    initAccordions();
     initSmoothScroll();
   });
 })();
