@@ -100,18 +100,39 @@ button, input, select {
 }
 
 .section {
-  padding-block: var(--space-xl);
+  padding-block: 3.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-block: 6.5rem;
+  }
 }
 
 .section-header {
   text-align: center;
-  max-width: 640px;
+  max-width: 680px;
   margin-inline: auto;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.section-header h2 {
+  font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .section-header p {
-  color: var(--color-text-secondary);
+  color: #475569;
+  font-size: 1.0625rem;
+  line-height: 1.7;
 }
 
 .grid {
@@ -257,6 +278,11 @@ button, input, select {
   text-align: center;
 }
 
+section.hero:not(.container) {
+  background: linear-gradient(180deg, #e6eefc 0%, var(--color-bg) 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
 .hero h1 {
   font-size: clamp(2rem, 1.2rem + 3.5vw, 3.5rem);
   font-weight: 800;
@@ -299,7 +325,7 @@ button, input, select {
 
 @media (min-width: 1024px) {
   .hero {
-    padding-block: calc(var(--space-xl) * 1.5) calc(var(--space-xl) * 1.5);
+    padding-block: calc(var(--space-xl) * 1.75);
   }
 }
 
@@ -316,7 +342,7 @@ button, input, select {
 
 .card {
   background-color: var(--color-white);
-  border: 1px solid var(--color-border);
+  border: 1px solid #cbd5e1;
   border-radius: var(--radius);
   padding: var(--space-md);
   box-shadow: var(--shadow);
@@ -383,13 +409,151 @@ button, input, select {
   color: var(--color-text-secondary);
 }
 
-.mission-section {
-  background-color: var(--color-white);
+.badge-status-soon {
+  background-color: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
 }
 
-.tools-overview,
+.badge-status-community {
+  background-color: rgba(124, 58, 237, 0.12);
+  color: #6d28d9;
+}
+
+.platform-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .platform-tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .platform-grid-4,
+  .learning-areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .platform-grid-4,
+  .learning-areas-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.learning-category-card .card-subtitle {
+  flex-grow: 0;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.platform-tool-card .badge {
+  width: fit-content;
+}
+
+.platform-tool-card .card-subtitle {
+  flex-grow: 0;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.platform-tool-card .card-actions {
+  margin-top: auto;
+}
+
+.platform-tool-card .btn {
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.section-footer {
+  margin-top: var(--space-lg);
+  text-align: center;
+}
+
+.section-footer p {
+  max-width: 700px;
+  margin-inline: auto;
+  color: var(--color-text-secondary);
+}
+
+.section-footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
 .learning-overview {
   background-color: var(--color-bg);
+}
+
+.why-section {
+  background-color: #e6eefc;
+  border-top-color: #cbd9f5;
+}
+
+.value-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius);
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--color-primary);
+}
+
+.value-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .metrics-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: var(--space-sm);
+  border-top: 3px solid var(--color-accent);
+}
+
+.metric-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.metric-label {
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.mission-section {
+  background-color: var(--color-bg);
+  border-top: 0;
+}
+
+.tools-overview {
+  background-color: var(--color-white);
 }
 
 .featured-tools-grid,
@@ -411,10 +575,10 @@ button, input, select {
 }
 
 .cta-banner {
-  background: linear-gradient(135deg, var(--color-primary), #1e40af);
+  background-color: #1e3a8a;
   color: var(--color-white);
   text-align: center;
-  padding-block: var(--space-xl);
+  padding-block: 4rem;
 }
 
 .cta-banner-inner {
@@ -422,6 +586,87 @@ button, input, select {
   flex-direction: column;
   align-items: center;
   gap: var(--space-sm);
+}
+
+.final-cta {
+  padding-block: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .final-cta {
+    padding-block: 6rem;
+  }
+}
+
+.final-cta-lead {
+  max-width: 720px;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+}
+
+.final-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-sm);
+  width: 100%;
+  max-width: 420px;
+}
+
+@media (min-width: 600px) {
+  .final-cta-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    width: auto;
+  }
+}
+
+.final-cta .btn {
+  min-height: 2.75rem;
+  transition: background-color var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.final-cta .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.final-cta :focus-visible {
+  outline-color: var(--color-white);
+}
+
+.final-cta-community {
+  width: 100%;
+  max-width: 720px;
+  margin-top: var(--space-md);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.final-cta-community h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.final-cta-community p {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.final-cta-trust {
+  max-width: 640px;
+  margin: var(--space-md) 0 0;
+  font-size: 0.9375rem;
+  color: #cbd5e1;
 }
 
 .cta-banner h2 {
@@ -782,5 +1027,15 @@ button, input, select {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .final-cta .btn,
+  .card {
+    transition: none;
+  }
+
+  .final-cta .btn:hover,
+  .card:hover {
+    transform: none;
   }
 }
