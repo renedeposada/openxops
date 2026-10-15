@@ -451,6 +451,10 @@ section.hero:not(.container) {
   color: var(--color-text);
 }
 
+.learning-category-card .card-actions {
+  margin-top: auto;
+}
+
 .platform-tool-card .badge {
   width: fit-content;
 }
