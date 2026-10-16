@@ -399,20 +399,7 @@ section.hero:not(.container) {
   color: #047857;
 }
 
-.badge-status-development {
-  background-color: rgba(245, 158, 11, 0.14);
-  color: #92400e;
-}
 
-.badge-status-planned {
-  background-color: rgba(100, 116, 139, 0.15);
-  color: var(--color-text-secondary);
-}
-
-.badge-status-soon {
-  background-color: rgba(37, 99, 235, 0.12);
-  color: #1d4ed8;
-}
 
 .badge-status-community {
   background-color: rgba(124, 58, 237, 0.12);
@@ -644,7 +631,7 @@ section.hero:not(.container) {
   outline-color: var(--color-white);
 }
 
-.final-cta-community {
+.final-cta-providers {
   width: 100%;
   max-width: 720px;
   margin-top: var(--space-md);
@@ -656,12 +643,12 @@ section.hero:not(.container) {
   gap: var(--space-sm);
 }
 
-.final-cta-community h3 {
+.final-cta-providers h3 {
   margin: 0;
   font-size: 1.25rem;
 }
 
-.final-cta-community p {
+.final-cta-providers p {
   margin: 0;
   color: #e2e8f0;
 }
