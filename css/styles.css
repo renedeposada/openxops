@@ -420,7 +420,8 @@ section.hero:not(.container) {
 
 @media (min-width: 768px) {
   .platform-grid-4,
-  .learning-areas-grid {
+  .learning-areas-grid,
+  .platform-grid-5 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -429,6 +430,26 @@ section.hero:not(.container) {
   .platform-grid-4,
   .learning-areas-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .platform-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .platform-grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.contribution-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .contribution-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
